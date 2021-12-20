@@ -4,15 +4,24 @@
 .header__logo {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.66;
   letter-spacing: 0.03em;
   color: #000000;
 
   display: block;
-  margin-right: 93px;
+
   padding-top: 24px;
   padding-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
+  }
 }
 
 .logo__color {
@@ -20,17 +29,24 @@
 }
 
 .header__havigation {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav-list {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-right: 84px;
+  }
 }
 
 .nav-list__item:not(:last-child) {
@@ -42,8 +58,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--header-text-color);
 
@@ -66,6 +82,10 @@
   &:focus {
     color: var(--accent-color);
   }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .haeder__content {
@@ -84,15 +104,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
 
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-bottom: 10px;
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -100,6 +117,16 @@
   &:hover .header-list__link-icon,
   &:focus .header-list__link-icon {
     fill: currentColor;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.66;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -132,5 +159,9 @@
 }
 
 .header-list {
-  display: flex;
+  display: block;
+  margin-bottom: -10px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
