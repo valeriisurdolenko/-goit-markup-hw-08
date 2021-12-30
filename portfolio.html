@@ -15,49 +15,98 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-        <header class="header">
-            <div class="container header__container">
-                <nav class="header__havigation">
-                    <a class="header__logo logo link" href="./index.htm" lang="en">
-                        <span class="logo__color">Web</span>Studio
-                    </a>
-        
-                    <ul class="nav-list list">
-                        <li class="nav-list__item ">
-                            <a class="nav-list__link link " href="./index.htm">Студия</a>
+    <header class="header">
+        <div class="container header__container">
+            <a class="header__logo logo link" href="./index.htm" lang="en">
+                <span class="logo__color">Web</span>Studio
+            </a>
+            <nav class="header__havigation">
+
+                <ul class="nav-list list">
+                    <li class="nav-list__item current">
+                        <a class="nav-list__link link current" href="./index.htm">Студия</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="nav-list__link link " href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="nav-list__link link " href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="haeder__content">
+                <ul class="header-list list">
+                    <li class="header-list__item ">
+                        <a class="header-list__link link" href="mailto:info@devstudio.com">
+                            <svg class="header-list__link-icon icon-envelope">
+                                <use href="./img/icon-svg/symbol-defs.svg#envelope"></use>
+                            </svg>
+                            <p class="header-list__link-text">info@devstudio.com</p>
+                        </a>
+                    </li>
+                    <li class="header-list__item">
+                        <a class="header-list__link link tel-link" href="tel:+380961111111">
+                            <svg class="header-list__link-icon icon-smartphone">
+                                <use href="./img/icon-svg/symbol-defs.svg#smartphone"></use>
+                            </svg>
+                            <p class="header-list__link-text">+38 096 111 11 11</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="open-menu-btn">
+                <svg class="open-menu-icon">
+                    <use href="img/icon-svg/symbol-defs.svg#open-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu is-hidden">
+            <div class="container">
+                <button type="button" class="close-menu-btn">
+                    <svg class="close-menu-icon">
+                        <use href="img/icon-svg/symbol-defs.svg#close-menu"></use>
+                    </svg>
+                </button>
+                <nav class="mob-menu__navigation">
+                    <ul class="mob-menu__nav list">
+                        <li class="mob-menu__nav-item ">
+                            <a class="mob-menu__nav-link link " href="./index.htm">Студия</a>
                         </li>
-                        <li class="nav-list__item current">
-                            <a class="nav-list__link link current" href="./portfolio.html">Портфолио</a>
+                        <li class="mob-menu__nav-item">
+                            <a class="mob-menu__nav-link link " href="./portfolio.html">Портфолио</a>
                         </li>
-                        <li class="nav-list__item">
-                            <a class="nav-list__link link " href="">Контакты</a>
+                        <li class="mob-menu__nav-item">
+                            <a class="mob-menu__nav-link link " href="">Контакты</a>
                         </li>
                     </ul>
                 </nav>
-        
-                <div class="haeder__content">
-                    <ul class="header-list list">
-                        <li class="header-list__item ">
-                            <a class="header-list__link link" href="mailto:info@devstudio.com">
-                                <svg class="header-list__link-icon icon-envelope">
-                                    <use href="./img/icon-svg/symbol-defs.svg#envelope"></use>
-                                </svg>
-                                <p class="header-list__link-text">info@devstudio.com</p>
+
+                <div class="mob-menu__content">
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-list__item">
+                            <a class="mob-menu-list__link link tel-link" href="tel:+380961111111">
+                                <p class="mob-menu-list__link-tel">+38 096 111 11 11</p>
                             </a>
                         </li>
-                        <li class="header-list__item">
-                            <a class="header-list__link link tel-link" href="tel:+380961111111">
-                                <svg class="header-list__link-icon icon-smartphone">
-                                    <use href="./img/icon-svg/symbol-defs.svg#smartphone"></use>
-                                </svg>
-                                <p class="header-list__link-text">+38 096 111 11 11</p>
+                        <li class="mob-menu-list__item ">
+                            <a class="mob-menu-list__link link" href="mailto:info@devstudio.com">
+                                <p class="mob-menu-list__link-text">info@devstudio.com</p>
                             </a>
                         </li>
                     </ul>
+                    <ul class="mob-menu__social-list list">
+                        <li class="social-list__item">Instagram</li>
+                        <li class="social-list__item">Twitter</li>
+                        <li class="social-list__item">Facebook</li>
+                        <li class="social-list__item">LinkedIn</li>
+                    </ul>
                 </div>
+
             </div>
-        
-        </header>
+
+
+    </header>
     <main>
         <section class="portfolio">
             <div class="container">
@@ -243,5 +292,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
 </body>
 </html>
