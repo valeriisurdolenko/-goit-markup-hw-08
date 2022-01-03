@@ -1,6 +1,10 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filter-list {
@@ -37,12 +41,16 @@
   margin-bottom: 15px;
   padding: 6px 22px;
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     background: var(--accent-color);
     color: var(--first-button-color);
 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 
@@ -59,6 +67,9 @@
   /* width: 370px; */
   width: 100%;
   margin-bottom: 30px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -84,9 +95,6 @@
   padding: 20px 24px;
 
   background: #ffffff;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 
